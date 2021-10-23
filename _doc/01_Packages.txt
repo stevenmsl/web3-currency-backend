@@ -1,0 +1,22 @@
+- mocha
+  - for running unit tests
+  - To write/run unit tests in TS
+    - install "@types/mocha", "@types/node", "ts-node", "typescript"
+    - create the following NPM script:
+       "test": "mocha -r ts-node/register 'tests/**/*.ts'"
+       - -r ts-node/register
+         - require the typescript compiler via ts-node
+       - 'tests/**/*.ts'
+         - where to look for tests written in typescript
+    - tsconfig.json
+      - add the following under "compilerOptions"  
+        "types": [
+            "@types/node",
+            "@types/mocha"
+        ],
+        - "@types/node" allows you to use nodejs 
+          built-in functions (assert, ...) in your unit tests
+        - "@types/mocha" allows you to use Mocha
+          functions (it, describe, ...) in your unit tests 
+           
+  

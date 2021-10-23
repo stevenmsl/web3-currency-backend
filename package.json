@@ -1,0 +1,23 @@
+{
+  "name": "web3-currency-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register 'tests/**/*.ts'",
+    "generate-types": "npx typechain --target=web3-v1 ./abis/*.json",
+    "compile": "ts-node compile.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typechain/web3-v1": "^3.1.0",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.1",
+    "mocha": "^9.1.3",
+    "solc": "^0.8.9",
+    "ts-node": "^10.3.0",
+    "typechain": "^5.2.0",
+    "typescript": "^4.4.4"
+  }
+}
