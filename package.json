@@ -14,10 +14,12 @@
     "@typechain/web3-v1": "^3.1.0",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.11.1",
+    "ganache-cli": "^6.12.2",
     "mocha": "^9.1.3",
     "solc": "^0.8.9",
     "ts-node": "^10.3.0",
     "typechain": "^5.2.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "web3": "^1.6.0"
   }
 }

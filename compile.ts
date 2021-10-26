@@ -37,14 +37,14 @@ const compileSol = (input: any, contractName: string) => {
       in the output
     - this is just how the output is structured 
   */
-  const compiled = JSON.parse(solc.compile(JSON.stringify(input))).contracts[
-    contractName
-  ][contractName];
 
-  /*
-    - add this property to help typechain create the types
-  */
-  compiled["contractName"] = contractName;
+  // const compiled = JSON.parse(solc.compile(JSON.stringify(input))).contracts[
+  //   contractName
+  // ][contractName];
+
+  const {
+    [contractName]: { [contractName]: compiled },
+  } = JSON.parse(solc.compile(JSON.stringify(input))).contracts;
 
   const {
     evm: {
