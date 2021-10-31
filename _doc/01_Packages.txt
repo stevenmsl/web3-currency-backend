@@ -34,14 +34,18 @@
 
 - web3
   - allows you to deploy contracts to either local Ganache or other
-    networks
+    networks such as Rinkeby Test Network
   - allows you to access a deployed contract and run its methods
-  - allows you take the abi from the solc json output to create a web3 
-    contract instance, and you can later call the methods on that instance
-    to perform the logic defined in the smart contract #01-01
+  - allows you take the abi in the solc output to create a web3 
+    contract instance. You can later call the methods on that instance
+    to perform different logic defined in the smart contract #01-01
 
 - typechain and @typechain/web3-v1
   - use them to generate TS types for the smart contracts
   - check the generate-types script to see how they are used
       
-    
+- @truffle/hdwallet-provider
+  - just like ganache or MetaMask, this package can be used
+    as a provider for web3 #01-02
+  - web3 uses it to connect to Rinkeby Test Network to deploy
+    contracts #01-03

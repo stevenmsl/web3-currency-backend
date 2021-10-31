@@ -83,6 +83,7 @@ const deploy = async () => {
   }
 
   const provider = new HDWalletProvider(secret.mnemonic, secret.infuraEndpoint);
+  /*#01-02 */
   const web3 = new Web3(provider);
   const [account] = await web3.eth.getAccounts();
 
@@ -90,7 +91,7 @@ const deploy = async () => {
 
   for (const contract of contracts) {
     console.log(`deploying ${contract.contractName}...`);
-
+    /*#01-03 */
     const result = await new web3.eth.Contract(contract.abi)
       .deploy({ data: contract.bytecode })
       .send({ gas: 1000000, from: account });
