@@ -1,0 +1,21 @@
+- Install MetaMask Chrome Extension
+  - make sure you write down the Mnemonic
+
+- Fund your account created by MetaMask
+  - you will need ETH to deploy smart contracts 
+    to the Rinkeby Test Network
+  - Go to faucet.rinkeby.io to fund the
+    account you got from installing MetaMask
+    - only the Twitter method works for me
+
+- Deploy the contracts
+  - npm run deploy
+
+- Check the deployment folder to find the address
+  of the deployed contracts
+
+- Go to https://rinkeby.etherscan.io/ and search
+  by the deployed contract addresses to find 
+  the deployed contracts 
+
+

@@ -33,9 +33,11 @@ const createSolcInput = (content: string, contractName: string) => {
 
 const compileSol = (input: any, contractName: string) => {
   /*
-    - don't be confused of how we get to a certain contract
-      in the output
-    - this is just how the output is structured 
+    - don't be confused in how we getting to a 
+      certain contract in the output
+    - this is just how the output is structured;
+      you can look at the files in the abis folder
+      and figure this our easily 
   */
 
   // const compiled = JSON.parse(solc.compile(JSON.stringify(input))).contracts[

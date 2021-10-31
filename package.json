@@ -6,11 +6,13 @@
   "scripts": {
     "test": "mocha -r ts-node/register 'tests/**/*.ts'",
     "generate-types": "npx typechain --target=web3-v1 ./abis/*.json",
-    "compile": "ts-node compile.ts"
+    "compile": "ts-node compile.ts",
+    "deploy": "ts-node deploy.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.5.1",
     "@typechain/web3-v1": "^3.1.0",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.11.1",
